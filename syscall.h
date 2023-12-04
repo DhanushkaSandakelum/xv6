@@ -17,6 +17,21 @@
 #define SYS_write  16
 #define SYS_mknod  17
 #define SYS_unlink 18
+<<<<<<< Updated upstream
 #define SYS_link   19
 #define SYS_mkdir  20
 #define SYS_close  21
+=======
+#define SYS_link 19
+#define SYS_mkdir 20
+#define SYS_close 21
+// Custom user defined functions
+// HOD 2
+#define SYS_getYear 22
+#define SYS_getmysize 23
+// HOD 3
+#define SYS_getkernelstartaddr 24
+#define SYS_getkernelendaddr 25
+#define SYS_getkernelvariaddr 26
+#define SYS_getsystemcalladdr 27
+>>>>>>> Stashed changes

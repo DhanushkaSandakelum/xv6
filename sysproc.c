@@ -89,3 +89,47 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+<<<<<<< Updated upstream
+=======
+
+// Custom user defined functions
+// HOD 2
+int
+sys_getYear(void)
+{
+  return 1975;
+}
+
+int
+sys_getmysize(void)
+{
+  return myproc()->sz;
+}
+
+// HOD 3
+int
+sys_getkernelstartaddr(void)
+{
+  return KERNBASE;
+}
+
+int
+sys_getkernelendaddr(void)
+{
+  return KERNBASE + PHYSTOP;
+}
+
+int
+sys_getkernelvariaddr(void)
+{
+  int x = 10;
+
+  return (int)&x;
+}
+
+int
+(*sys_getsystemcalladdr())(void)
+{
+  return sys_fork;
+}
+>>>>>>> Stashed changes

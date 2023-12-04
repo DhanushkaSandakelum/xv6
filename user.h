@@ -23,6 +23,18 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+<<<<<<< Updated upstream
+=======
+// Custom user defined functions
+// HOD 2
+int getYear(void);
+int getmysize(void);
+// HOD 3
+int getkernelstartaddr(void);
+int getkernelendaddr(void);
+int getkernelvariaddr(void);
+int getsystemcalladdr(void);
+>>>>>>> Stashed changes
 
 // ulib.c
 int stat(const char*, struct stat*);
