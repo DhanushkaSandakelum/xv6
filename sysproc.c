@@ -89,3 +89,30 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+<<<<<<< Updated upstream
+=======
+
+
+int
+sys_getYear(void)
+{
+  return 1975;
+}
+
+int
+sys_getmysize(void)
+{
+  return myproc()->sz;
+}
+
+int
+sys_setpriority(void)
+{
+  int priority;
+  argint(0, &priority);
+
+  myproc()->priority = priority;
+
+  return priority;
+}
+>>>>>>> Stashed changes

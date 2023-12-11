@@ -23,6 +23,13 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+<<<<<<< Updated upstream
+=======
+int getYear(void);
+int getmysize(void);
+// HOTD 3
+int setpriority(int);
+>>>>>>> Stashed changes
 
 // ulib.c
 int stat(const char*, struct stat*);
