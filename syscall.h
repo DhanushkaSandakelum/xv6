@@ -17,6 +17,16 @@
 #define SYS_write  16
 #define SYS_mknod  17
 #define SYS_unlink 18
+<<<<<<< Updated upstream
 #define SYS_link   19
 #define SYS_mkdir  20
 #define SYS_close  21
+=======
+#define SYS_link 19
+#define SYS_mkdir 20
+#define SYS_close 21
+#define SYS_getYear 22
+#define SYS_getmysize 23
+// HOTD 5
+#define SYS_getinodesize 24
+>>>>>>> Stashed changes

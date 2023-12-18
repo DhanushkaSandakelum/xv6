@@ -103,6 +103,13 @@ extern int sys_unlink(void);
 extern int sys_wait(void);
 extern int sys_write(void);
 extern int sys_uptime(void);
+<<<<<<< Updated upstream
+=======
+extern int sys_getYear(void);
+extern int sys_getmysize(void);
+// HOTD 5
+extern int sys_getinodesize(void);
+>>>>>>> Stashed changes
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
@@ -126,6 +133,12 @@ static int (*syscalls[])(void) = {
 [SYS_link]    sys_link,
 [SYS_mkdir]   sys_mkdir,
 [SYS_close]   sys_close,
+<<<<<<< Updated upstream
+=======
+[SYS_getYear]   sys_getYear,
+[SYS_getmysize]   sys_getmysize,
+[SYS_getinodesize]   sys_getinodesize,
+>>>>>>> Stashed changes
 };
 
 void

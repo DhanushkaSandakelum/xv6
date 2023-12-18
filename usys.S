@@ -29,3 +29,9 @@ SYSCALL(getpid)
 SYSCALL(sbrk)
 SYSCALL(sleep)
 SYSCALL(uptime)
+<<<<<<< Updated upstream
+=======
+SYSCALL(getYear)
+SYSCALL(getmysize)
+SYSCALL(getinodesize)
+>>>>>>> Stashed changes

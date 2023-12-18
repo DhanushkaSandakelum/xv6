@@ -7,6 +7,7 @@
 #include "mmu.h"
 #include "proc.h"
 
+
 int
 sys_fork(void)
 {
@@ -89,3 +90,29 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+<<<<<<< Updated upstream
+=======
+
+
+int
+sys_getYear(void)
+{
+  return 1975;
+}
+
+int
+sys_getmysize(void)
+{
+  return myproc()->sz;
+}
+
+// int
+// sys_getinodesize(void)
+// {
+//   char *path;
+
+//   argstr(0, &path);
+
+//   return 1111;
+// }
+>>>>>>> Stashed changes
